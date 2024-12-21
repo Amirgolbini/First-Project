@@ -1,8 +1,19 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-def http_test(request):
-    return HttpResponse("Hello")
+def index_page(request):
+    return render(request, 'website/index.html')
 
-# Create your views here.
+
+def index1_page(request):
+    return render(request, 'website/index1.html')
+
+
+def index2_page(request):
+    return render(request, 'website/index-2.html')
+
+def index2light_page(request):
+    return render(request, 'website/index-2-light.html')
+
+def indexlight_page(request):
+    return render(request, 'website/index-light.html')
